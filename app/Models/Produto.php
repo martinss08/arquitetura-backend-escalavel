@@ -12,4 +12,9 @@ class Produto extends Model
         "value",
         "situacao"
     ];
+
+    public function produtoItens()
+    {
+        return $this->BelongsTo(PedidoItem::class);
+    }
 }
